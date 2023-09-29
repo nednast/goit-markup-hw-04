@@ -108,7 +108,11 @@ body {
 }
 /* Секция заказа */
 .order {
-  background-color: #2e2f42;
+  background-color: rgba(46, 47, 66, 0.7);
+  background-image: url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 600px;
   text-align: center;
   padding: 188px 0;
@@ -155,6 +159,19 @@ body {
 /* Секция характеристики */
 .characteristics {
   padding: 120px 0;
+}
+.svg-wrapper {
+  border-radius: 4px;
+  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+  background: var(--CLOUD, #f4f4fd);
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards-characteristics-icon {
 }
 
 .visually-hidden {
