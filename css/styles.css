@@ -82,10 +82,6 @@ body {
 .menu-link:focus {
   color: #404bbf;
 }
-/* .menu-link:active {
-  color: #404bbf;
-  text-decoration: underline #404bbf 4px;
-} */
 
 .menu-link::after {
   content: "";
@@ -171,6 +167,7 @@ body {
   border-radius: 4px;
   height: 56px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-order:hover {
   background-color: #404bbf;
@@ -245,17 +242,23 @@ body {
   height: 40px;
   align-items: center;
   padding: 12px;
+
   background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-link {
+  background-color: #4d5ae5;
   width: 100%;
   height: 100%;
-  background-color: #4d5ae5;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-icon {
+  fill: #f4f4fd;
 }
 
 .svg-link:hover {
@@ -351,10 +354,10 @@ body {
 .card-portfolio:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-
+}
+.card-portfolio > p:hover {
   transform: translateY(0%);
 }
-
 .portfolio-text-wrapper {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
@@ -375,6 +378,27 @@ body {
   letter-spacing: 0.02em;
   line-height: 1.5;
 }
+
+.footer-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-text {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* Футер */
 .footer {
   background-color: #2e2f42;
@@ -416,13 +440,38 @@ body {
 .svg-footer-icon-box {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
 }
 .svg-footer-icon-wrapper {
-  background-color: #4d5ae5;
-  border-radius: 50%;
   width: 40px;
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-link-footer {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
   align-items: center;
-  padding: 12px;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.svg-link-footer:hover {
+  background-color: #31d0aa;
+}
+
+.svg-link-footer:focus {
+  background-color: #31d0aa;
+}
+
+.team-icon-footer {
+  fill: #f4f4fd;
 }
