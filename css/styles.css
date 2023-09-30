@@ -78,6 +78,11 @@ body {
 .menu-link:focus {
   color: #404bbf;
 }
+.menu-link:active {
+  color: #404bbf;
+  text-decoration: underline #404bbf 4px;
+}
+
 /* Секция контакты */
 .contacts {
   font-style: normal;
@@ -171,8 +176,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-.cards-characteristics-icon {
-}
 
 .visually-hidden {
   position: absolute;
@@ -212,6 +215,25 @@ body {
   color: #434455;
 }
 /* Секция команда*/
+.svg-icon-box {
+  padding-top: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.svg-icon-wrapper {
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  padding: 12px;
+}
+
+.svg-icon-wrapper:hover {
+  background-color: #404bbf;
+}
+
 .team {
   background-color: #f4f4fd;
   padding: 120px 0;
@@ -336,4 +358,17 @@ body {
   letter-spacing: 0.02em;
   line-height: 1.5;
   width: 264px;
+}
+.svg-footer-icon-box {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.svg-footer-icon-wrapper {
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  padding: 12px;
 }
