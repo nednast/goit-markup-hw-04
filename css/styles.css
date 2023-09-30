@@ -439,7 +439,6 @@ body {
 }
 .svg-footer-icon-box {
   display: flex;
-  justify-content: center;
   gap: 16px;
 }
 .svg-footer-icon-wrapper {
@@ -474,4 +473,12 @@ body {
 
 .team-icon-footer {
   fill: #f4f4fd;
+}
+.logo-text-footer-wrapper {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
